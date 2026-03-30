@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Инкапсуляция - диплом</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>Применение инкапсуляции для повышения надежности программ</h1>
+</header>
+
+<main>
+
+<section>
+    <h2>Введение</h2>
+    <p>
+    Инкапсуляция — это один из основных принципов ООП. Она помогает создавать более надежные и понятные программы.
+    Суть в том, что данные скрываются внутри класса, а доступ к ним происходит только через методы.
+    </p>
+</section>
+
+<section>
+    <h2>Что такое инкапсуляция?</h2>
+    <p>
+    Инкапсуляция — это объединение данных и методов в одном объекте с ограничением прямого доступа.
+    Проще говоря: данные защищены, и изменить их можно только через специальные функции.
+    </p>
+</section>
+
+<section>
+    <h2>Зачем она нужна?</h2>
+    <ul>
+        <li>Защита данных от ошибок</li>
+        <li>Контроль изменений (проверки внутри методов)</li>
+        <li>Упрощение кода</li>
+        <li>Повышение надежности программы</li>
+    </ul>
+</section>
+
+<section>
+    <h2>Простой пример из жизни</h2>
+    <p>
+    Как автомобиль: водитель не управляет двигателем напрямую, а использует руль и педали.
+    Так и в коде — мы работаем через методы, а не напрямую с данными.
+    </p>
+</section>
+
+<section>
+    <h2>Как это реализуется?</h2>
+    <ul>
+        <li><b>private</b> — скрытые данные</li>
+        <li><b>public</b> — методы для работы</li>
+        <li>Геттеры — получить значение</li>
+        <li>Сеттеры — изменить значение с проверкой</li>
+    </ul>
+</section>
+
+<section>
+    <h2>Пример (банковский счет)</h2>
+    <p>Ниже показан пример работы инкапсуляции:</p>
+
+    <div class="account">
+        <p>Баланс: <span id="balance">1000</span> сом</p>
+
+        <input type="number" id="dep" placeholder="Сумма пополнения">
+        <button id="depBtn">Пополнить</button>
+
+        <input type="number" id="with" placeholder="Сумма снятия">
+        <button id="withBtn">Снять</button>
+    </div>
+</section>
+
+<section>
+    <h2>Почему это повышает надежность?</h2>
+    <ul>
+        <li>Нельзя случайно изменить данные</li>
+        <li>Все изменения проходят через проверки</li>
+        <li>Снижается количество ошибок</li>
+        <li>Программа работает стабильнее</li>
+    </ul>
+</section>
+
+<section>
+    <h2>Заключение</h2>
+    <p>
+    Инкапсуляция делает программы более безопасными и понятными.
+    Она помогает контролировать данные и уменьшает ошибки.
+    Поэтому этот принцип важен при разработке программ.
+    </p>
+</section>
+
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Инкапсуляция - диплом</title>
+<style>
+body { font-family: Arial; background:#f5f5f5; margin:0; }
+header { background:#4CAF50; color:white; padding:20px; text-align:center; }
+main { max-width:900px; margin:auto; padding:20px; }
+section { background:white; padding:15px; margin-bottom:20px; border-radius:8px; }
+h2 { color:#333; }
+.account { background:#eef; padding:15px; border-radius:8px; max-width:300px; margin:auto; }
+input { width:100%; padding:6px; margin:4px 0; font-size:14px; }
+button { width:100%; padding:8px; margin:4px 0; font-size:14px; }
+input, button { width:100%; padding:10px; margin:5px 0; }
+button { background:#4CAF50; color:white; border:none; }
+</style>
+</head>
+<body>
+
+<header>
+<h1>Применение инкапсуляции для повышения надежности программ</h1>
+</header>
+
+<main>
+
+<section>
+<h2>Введение</h2>
+<p>
+Инкапсуляция — это один из основных принципов ООП. Она помогает создавать более надежные и понятные программы.
+Суть в том, что данные скрываются внутри класса, а доступ к ним происходит только через методы.
+</p>
+</section>
+
+<section>
+<h2>Что такое инкапсуляция?</h2>
+<p>
+Инкапсуляция — это объединение данных и методов в одном объекте с ограничением прямого доступа.
+Проще говоря: данные защищены, и изменить их можно только через специальные функции.
+</p>
+</section>
+
+<section>
+<h2>Зачем она нужна?</h2>
+<ul>
+<li>Защита данных от ошибок</li>
+<li>Контроль изменений (проверки внутри методов)</li>
+<li>Упрощение кода</li>
+<li>Повышение надежности программы</li>
+</ul>
+</section>
+
+<section>
+<h2>Простой пример из жизни</h2>
+<p>
+Как автомобиль: водитель не управляет двигателем напрямую, а использует руль и педали.
+Так и в коде — мы работаем через методы, а не напрямую с данными.
+</p>
+</section>
+
+<section>
+<h2>Как это реализуется?</h2>
+<ul>
+<li><b>private</b> — скрытые данные</li>
+<li><b>public</b> — методы для работы</li>
+<li>Геттеры — получить значение</li>
+<li>Сеттеры — изменить значение с проверкой</li>
+</ul>
+</section>
+
+<section>
+<h2>Пример (банковский счет)</h2>
+<p>Ниже показан пример работы инкапсуляции:</p>
+
+<div class="account">
+<p>Баланс: <span id="balance">1000</span> сом</p>
+
+<input type="number" id="dep" placeholder="Сумма пополнения">
+<button onclick="depositMoney()">Пополнить</button>
+
+<input type="number" id="with" placeholder="Сумма снятия">
+<button onclick="withdrawMoney()">Снять</button>
+</div>
+
+</section>
+
+<section>
+<h2>Почему это повышает надежность?</h2>
+<ul>
+<li>Нельзя случайно изменить данные</li>
+<li>Все изменения проходят через проверки</li>
+<li>Снижается количество ошибок</li>
+<li>Программа работает стабильнее</li>
+</ul>
+</section>
+
+<section>
+<h2>Заключение</h2>
+<p>
+Инкапсуляция делает программы более безопасными и понятными.
+Она помогает контролировать данные и уменьшает ошибки.
+Поэтому этот принцип важен при разработке программ.
+</p>
+</section>
+
+</main>
+
+<script>
+class BankAccount {
+    #balance;
+
+    constructor(initialBalance) {
+        this.#balance = initialBalance;
+    }
+
+    getBalance() {
+        return this.#balance;
+    }
+
+    deposit(amount) {
+        if (amount > 0) {
+            this.#balance += amount;
+            return true;
+        } else {
+            alert("Ошибка: сумма должна быть больше 0");
+            return false;
+        }
+    }
+
+    withdraw(amount) {
+        if (amount > 0 && amount <= this.#balance) {
+            this.#balance -= amount;
+            return true;
+        } else {
+            alert("Ошибка: недостаточно денег или неверная сумма");
+            return false;
+        }
+    }
+}
+
+const account = new BankAccount(1000);
+
+function update() {
+    document.getElementById("balance").innerText = account.getBalance();
+}
+
+function depositMoney() {
+    let a = Number(document.getElementById("dep").value);
+    if (account.deposit(a)) update();
+}
+
+function withdrawMoney() {
+    let a = Number(document.getElementById("with").value);
+    if (account.withdraw(a)) update();
+}
+
+update();
+</script>
+
+</body>
+</html> -->

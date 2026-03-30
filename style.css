@@ -1,0 +1,55 @@
+body {
+    font-family: Arial;
+    background:#f5f5f5;
+    margin:0;
+}
+
+header {
+    background:#4CAF50;
+    color:white;
+    padding:20px;
+    text-align:center;
+}
+
+main {
+    max-width:900px;
+    margin:auto;
+    padding:20px;
+}
+
+section {
+    background:white;
+    padding:15px;
+    margin-bottom:20px;
+    border-radius:8px;
+}
+
+h2 {
+    color:#333;
+}
+
+.account {
+    background:#eef;
+    padding:15px;
+    border-radius:8px;
+    max-width:300px;
+    margin:auto;
+}
+
+/* Поля ввода и кнопки одинаковой ширины */
+input[type="number"], button {
+    padding:10px;
+    margin:5px 0;
+    font-size:14px;
+}
+
+button {
+    background:#4CAF50;
+    color:white;
+    border:none;
+    cursor:pointer;
+}
+
+button:hover {
+    background:#45a049;
+}
